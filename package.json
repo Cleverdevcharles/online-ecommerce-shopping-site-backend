@@ -1,0 +1,41 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Miss Nchedo Ecommerce Backend",
+  "main": "server.js",
+
+  "scripts": {
+    "heroku": "cd frontend && npm install &&",
+    "start": "NODE_ENV=production node server.js",
+    "dev": "nodemon server"
+  },
+  "author": "Mbaogu Charles Chiakpaoke",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.5.5",
+    "body-parser": "^1.19.0",
+    "braintree": "^2.24.0",
+    "cloudinary": "^1.26.2",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "express-validator": "^6.4.0",
+    "formidable": "^1.2.2",
+    "google-auth-library": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.10.3",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.0",
+    "slugify": "^1.5.3",
+    "twilio": "^3.54.1",
+    "uuid": "^3.3.2"
+  }
+}
