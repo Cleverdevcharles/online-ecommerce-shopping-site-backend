@@ -42,14 +42,14 @@ app.use(cookieParser());
 // app.use(expressValidator());
 
 // USE ALL ROUTES
-app.use(authRoute);
-app.use(userRoutes);
-app.use(categoryRoutes);
-app.use(productRoutes);
-app.use(postRoutes);
-app.use(siteRoutes);
-app.use(braintreeRoutes);
-app.use(orderRoutes);
+app.use("/api", authRoute);
+app.use("/api", userRoutes);
+app.use("/api", categoryRoutes);
+app.use("/api", productRoutes);
+app.use("/api", postRoutes);
+app.use("/api", siteRoutes);
+app.use("/api", braintreeRoutes);
+app.use("/api", orderRoutes);
 
 app.use((req, res, next) => {
   res.status(404).send(`<h1>Opps!!! PAGE NOT FOUND</h1>`);
